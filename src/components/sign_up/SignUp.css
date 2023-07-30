@@ -1,0 +1,136 @@
+.central-form{
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+.central-form h4{
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+form{
+    display: grid;
+    width: 30%;
+    max-width: 500px;
+    gap: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 1px solid rgb(147, 138, 138);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+form input[type="text"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    width: 100%;
+}
+
+form input[type="number"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    width: 100%;
+}
+
+form input[type="password"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    width: 100%;
+}
+
+form input[type="submit"] {
+    padding: 0.5rem 2rem;
+    background-color: #008CBA; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+
+form input[type="submit"]:hover {
+    background-color: #005c89;
+}
+
+form input:focus {
+    outline: none;
+    border-color: rgb(138, 36, 36);
+    box-shadow: 0 0 10px #719ECE;
+}
+
+
+.account-check {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.account-check span {
+    margin-right: 0.5rem;
+}
+
+.account-check a {
+    color: #008CBA;
+    text-decoration: none;
+}
+
+.account-check a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .central-form{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+    h4{
+        display: none;
+    }
+
+    form {
+        padding: 15px; 
+        width: 50vw;
+    }
+
+    .account-check span {
+        font-size: 10px;
+    }
+
+    .account-check a {
+        font-size: 12px;
+    }
+
+    form input[type="text"] {
+        width: 100%;
+    }
+    
+    form input[type="number"] {
+        width: 100%;
+    }
+    
+    form input[type="password"] {
+        width: 100%;
+    }
+    
+    form input[type="submit"] {
+        width: 100%;
+    }
+}
