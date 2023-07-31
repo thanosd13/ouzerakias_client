@@ -1,0 +1,47 @@
+.dropdown {
+    position: relative;
+    border: none;
+    border-radius: 8px;
+    width: 15vw;
+}
+
+.dropdown-prompt {
+    font-size: 13px;
+    padding: 0.5rem;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #7f7f7f;
+}
+
+.dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #ddd;
+}
+
+.dropdown-option {
+    border: none;
+    color: #4e4e4e;
+    background-color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+}
+
+.dropdown-option:hover {
+    background-color: #f2f2f2;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .dropdown {
+        width: 100%
+    }
+    
+}

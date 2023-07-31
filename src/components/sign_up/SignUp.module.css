@@ -1,4 +1,4 @@
-.central-form{
+.centralForm{
     padding-top: 10rem;
     display: flex;
     flex-direction: column;
@@ -8,14 +8,14 @@
     border-radius: 10px;
 }
 
-.central-form h4{
+.centralForm h4{
     text-align: center;
     color: #FFF;
     margin-bottom: 2rem;
     font-size: 2rem;
 }
 
-form{
+.formRegister{
     display: grid;
     width: 30%;
     max-width: 500px;
@@ -28,7 +28,7 @@ form{
     margin: 0 auto;
 }
 
-form input[type="text"] {
+.formRegister input[type="text"] {
     padding: 0.5rem;
     border: none;
     border-radius: 5px;
@@ -36,7 +36,7 @@ form input[type="text"] {
     width: 100%;
 }
 
-form input[type="number"] {
+.formRegister input[type="number"] {
     padding: 0.5rem;
     border: none;
     border-radius: 5px;
@@ -44,7 +44,7 @@ form input[type="number"] {
     width: 100%;
 }
 
-form input[type="password"] {
+.formRegister input[type="password"] {
     padding: 0.5rem;
     border: none;
     border-radius: 5px;
@@ -52,7 +52,7 @@ form input[type="password"] {
     width: 100%;
 }
 
-form input[type="submit"] {
+.formRegister input[type="submit"] {
     padding: 0.5rem 2rem;
     background-color: #008CBA; 
     color: white; 
@@ -63,39 +63,39 @@ form input[type="submit"] {
     width: 100%;
 }
 
-form input[type="submit"]:hover {
+.formRegister input[type="submit"]:hover {
     background-color: #005c89;
 }
 
-form input:focus {
+.formRegister input:focus {
     outline: none;
     border-color: rgb(138, 36, 36);
     box-shadow: 0 0 10px #719ECE;
 }
 
 
-.account-check {
+.accountCheck {
     margin-top: 1rem;
     text-align: center;
 }
 
-.account-check span {
+.accountCheck span {
     margin-right: 0.5rem;
 }
 
-.account-check a {
+.accountCheck a {
     color: #008CBA;
     text-decoration: none;
 }
 
-.account-check a:hover {
+.accountCheck a:hover {
     text-decoration: underline;
 }
 
 
 @media screen and (max-width: 768px) {
 
-    .central-form{
+    .centralForm{
         justify-content: center;
         align-items: center;
         display: flex;
@@ -110,27 +110,27 @@ form input:focus {
         width: 50vw;
     }
 
-    .account-check span {
+    .accountCheck span {
         font-size: 10px;
     }
 
-    .account-check a {
+    .accountCheck a {
         font-size: 12px;
     }
 
-    form input[type="text"] {
+    .formRegister input[type="text"] {
         width: 100%;
     }
     
-    form input[type="number"] {
+    .formRegister input[type="number"] {
         width: 100%;
     }
     
-    form input[type="password"] {
+    .formRegister input[type="password"] {
         width: 100%;
     }
     
-    form input[type="submit"] {
+    .formRegister input[type="submit"] {
         width: 100%;
     }
 }

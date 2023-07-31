@@ -1,5 +1,5 @@
 import "./App.css";
-import About from "./components/about/About";
+import Maps from "./components/maps/Maps";
 import Cards from "./components/cards/Card";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
@@ -15,7 +15,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/about' element={<About />} />
+          <Route path='/about' element={<Maps />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<SignUp />} />

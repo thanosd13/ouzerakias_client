@@ -1,0 +1,109 @@
+.contactPage{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paraContact{
+    padding-top: 2rem;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid rgb(147, 138, 138);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.contactInputs{
+    display: flex;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.contactInputs input{
+    width: 15vw;
+    border: none;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.labelContact{
+    font-size: 15px;
+    font-family: Arial, sans-serif;  /* Use a clean, easily readable font */
+    color: #333;  /* Dark grey color for the text */
+    width: 15vw; 
+    margin-top: 10px;
+}
+
+.textArea{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    width: 100%;
+    padding: 0.5rem;
+}   
+
+.contactInputs input:focus {
+    outline: none;
+    border-color: rgb(138, 36, 36);
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.textArea:focus{
+    outline: none;
+    border-color: rgb(138, 36, 36);
+    box-shadow: 0 0 10px #719ECE;
+}   
+
+.sendButton{
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: none; 
+    background-color: #008CBA; 
+    color: white; 
+}
+
+.sendButton:hover{
+    cursor: pointer;
+    background-color: #005c89;
+}
+
+.iconSend{
+    padding-left: 1rem;
+}
+
+.dropdownContact{
+    width: 15vw;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .contactForm{
+        width: 80vw;
+    }
+
+    .contactInputs{
+        flex-direction: column;
+    }
+
+    .contactInputs input{
+        width: 100%
+    }
+
+    .labelContact{
+        display: none;
+    }
+    
+}

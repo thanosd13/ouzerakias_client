@@ -17,7 +17,7 @@ function Navbar() {
         <img className="logo" src={logo} alt="logo" />
         <nav ref={navRef}>
           <Link onClick={showNavbar} to="/">Ουζερί</Link>
-          <Link onClick={showNavbar} to="/about">Σχετικά</Link>
+          <Link onClick={showNavbar} to="/about">Χάρτες</Link>
           <Link onClick={showNavbar} to="/contact">Επικοινωνία</Link>
           <Link onClick={showNavbar} to="/login" className="sign_in_btn">
             Σύνδεση/Εγγραφή
