@@ -20,7 +20,7 @@
     gap: 1rem;
 }
 
-.social-icon {
+.socialIcon {
     color: #c5b2b2;
     font-size: 20px;
     margin: 0 10px;
@@ -38,12 +38,12 @@
     justify-content: space-between;
 }
 
-.contact-info {
-    margin-bottom: 20px;
+.contactInfo {
+    margin-bottom: 10px;
     text-align: center;
 }
 
-.contact-info p {
+.contactInfo p {
     margin: 5px 0;
     color: #fff;
 }

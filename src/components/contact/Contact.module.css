@@ -1,12 +1,22 @@
 .contactPage{
-    padding: 4rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.contactPage h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
 .paraContact{
-    padding-top: 2rem;
+    padding-top: 0.5rem;
     text-align: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
@@ -60,6 +70,10 @@
     box-shadow: 0 0 10px #719ECE;
 }
 
+.contactInputs input::placeholder {
+    font-size: 13px;
+  }
+
 .textArea:focus{
     outline: none;
     border-color: rgb(138, 36, 36);
@@ -74,6 +88,7 @@
     border: none; 
     background-color: #008CBA; 
     color: white; 
+    font-size: 13px;
 }
 
 .sendButton:hover{

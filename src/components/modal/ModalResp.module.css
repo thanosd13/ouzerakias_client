@@ -1,0 +1,47 @@
+.genericModal {
+    font-family: Arial, sans-serif; 
+  }
+  
+  .modalHeader {
+    background-color: #e1edfb; 
+    color: #00308E;
+    padding: 5px 16px !important; 
+  }
+  
+  .modalTitle {
+    font-size: 17px !important;  
+  }
+  
+  .modalBody {
+    background-color: #ffffff; 
+    padding: 20px;
+    font-size: 14px !important;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .modalFooter {
+    background-color: #efefef; 
+    padding: 10px;
+  }
+  
+
+  .buttonModal{
+    background-color: #5cb85c !important;
+    border-color: #4cae4c !important;
+    font-size: 13px !important;
+  }
+
+  .buttonModal:hover{
+    background-color: #099e09 !important;
+  }
+
+  .buttonModal:focus{
+    background-color: #099e09 !important;
+  }
+
+  .buttonDanger{
+    background-color: #c4193e !important;
+    border-color: #c4193e !important;
+    font-size: 13px !important;
+  }
