@@ -105,9 +105,9 @@
         display: none;
     }
 
-    form {
+    .formRegister {
         padding: 15px; 
-        width: 50vw;
+        width: 80vw;
     }
 
     .accountCheck span {

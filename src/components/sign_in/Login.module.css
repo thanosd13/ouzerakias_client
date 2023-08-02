@@ -114,9 +114,11 @@
 
     .formLogin {
         padding: 15px; 
-        width: 50%;
-        justify-content: center;
-        align-items: center;
+        width: 80vw;
+    }
+
+    .formLogin input[type="submit"]{
+        width: 100%;
     }
 
     .accountCheck span {

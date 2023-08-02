@@ -38,10 +38,12 @@
 
 .labelContact{
     font-size: 15px;
-    font-family: Arial, sans-serif;  /* Use a clean, easily readable font */
-    color: #333;  /* Dark grey color for the text */
+    font-family: Arial, sans-serif;
+    color: #333;
     width: 15vw; 
     margin-top: 10px;
+    padding-top: 0px !important;
+    font-size: 12px;
 }
 
 .textArea{

@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { faPaperPlane, faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import styles from "../contact/Contact.module.css"
 import Footer from "../footer/Footer";
 import Dropdown from "../dropdown_menu/Dropdown";
 
 const Contact = () => {
+    
 
     const options = [
         { id: 1, name: 'Χρήστης' },

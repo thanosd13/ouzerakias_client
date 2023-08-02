@@ -33,6 +33,12 @@
     text-align: center;
 }
 
+.icon_drop{
+    right: 0;
+    position: absolute;
+    padding-right: 5px;
+}
+
 .dropdown-option:hover {
     background-color: #f2f2f2;
 }

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import './Dropdown.css';
 
 const Dropdown = ({ options, prompt, label }) => {
@@ -9,6 +11,7 @@ const Dropdown = ({ options, prompt, label }) => {
         <div className="dropdown">
             <div className="dropdown-prompt" onClick={() => setOpen(!open)}>
                 {value ? value[label] : prompt}
+                <FontAwesomeIcon className="icon_drop" icon={faCaretDown} />
             </div>
             {open && (
                 <div className="dropdown-options">

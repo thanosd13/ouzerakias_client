@@ -4,7 +4,7 @@ import Cards from "./components/cards/Card";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Home from "./components/home/Home";
-import Navbar from "./components/navbar_two/Navbar";
+import Navbar from "./components/navbar/Navbar";
 import Login from "./components/sign_in/Login";
 import SignUp from "./components/sign_up/SignUp";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";

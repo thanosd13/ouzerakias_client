@@ -1,49 +1,40 @@
-import { React, useState } from 'react';
-import logo from "../../images/logo.png";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useRef } from "react";
+import { Link } from "react-router-dom";
 import "../navbar/Navbar.css";
-import {
-    AiOutlineUser,
-    AiOutlineSearch,
-    AiOutlineMenu,
-    AiOutlineClose,
-  } from 'react-icons/ai';
-  import { Link } from 'react-router-dom';
+import logo from "../../images/logo.png";
 
+function Navbar() {
+  const navRef = useRef();
 
-
-const Navbar = () => {
-
-    const [nav, setNav] = useState(false);
-
-
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
 
   return (
-    <header className="navbar">
-      <img className="logo" src={logo} alt="logo" />
-      <nav>
-        <ul className={nav ? [ 'menu', 'active'].join(' ') : ['menu']}>
-          <li>
-            <Link to="/">Ουζερί</Link>
-          </li>
-          <li>
-            <Link to="/">Σύνδεση</Link>
-          </li>
-          <li>
-            <Link to="/register">Εγγραφή</Link>
-          </li>
-          <li>
-            <AiOutlineSearch className='search_btn' size={25} style={{ marginTop: '6px' }} />
-          </li>
-          <li>
-            <AiOutlineUser size={25} style={{ marginTop: '6px' }} />
-          </li>
-        </ul>
-      </nav>
-      <div onClick={()=> setNav(!nav)} className="mobile_btn">
-        {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}       
-      </div>
-    </header>
+    <div>
+      <header>
+        <Link to="/">
+          <img className="logo" src={logo} alt="logo" />
+        </Link>
+        <nav ref={navRef}>
+          <Link onClick={showNavbar} to="/">Ουζερί</Link>
+          <Link onClick={showNavbar} to="/about">Χάρτες</Link>
+          <Link onClick={showNavbar} to="/contact">Επικοινωνία</Link>
+          <Link onClick={showNavbar} to="/login" className="sign_in_btn">
+            Σύνδεση/Εγγραφή
+          </Link>
+          <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+            <FaTimes />
+          </button>
+        </nav>
+        <button className="nav-btn" onClick={showNavbar}>
+          <FaBars />
+        </button>
+      </header>
+
+    </div>
   );
-};
+}
 
 export default Navbar;
