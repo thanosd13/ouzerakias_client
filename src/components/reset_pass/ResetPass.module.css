@@ -1,5 +1,5 @@
 .centralForm{
-    padding-top: 10rem;
+    padding-top: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,7 +15,7 @@
     font-size: 2rem;
 }
 
-.formRegister{
+.formResetPass{
     display: grid;
     width: 30%;
     max-width: 500px;
@@ -28,43 +28,28 @@
     margin: 0 auto;
 }
 
-.formRegister input[type="text"] {
-    padding: 0.5rem;
+.formResetPass input[type="text"] {
+    padding: 0.3rem;
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
     width: 100%;
 }
 
-.formRegister input::placeholder {
+.formResetPass input::placeholder {
     font-size: 13px;
 }
 
-.formRegister input[type="number"] {
-    padding: 0.5rem;
+
+.formResetPass input[type="password"] {
+    padding: 0.3rem;
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
     width: 100%;
 }
 
-.formRegister input[type="email"] {
-    padding: 0.5rem;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
-    width: 100%;
-}
-
-.formRegister input[type="password"] {
-    padding: 0.5rem;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
-    width: 100%;
-}
-
-.formRegister input[type="submit"] {
+.formResetPass input[type="submit"] {
     padding: 0.5rem 2rem;
     background-color: #008CBA; 
     color: white; 
@@ -73,54 +58,69 @@
     cursor: pointer; 
     transition: all 0.3s ease 0s;
     width: 100%;
+    font-size: 14px;
 }
 
-.formRegister input[type="submit"]:hover {
+.formResetPass input[type="submit"]:hover {
     background-color: #005c89;
 }
 
-.formRegister input:focus {
+.formResetPass input:focus {
     outline: none;
     border-color: rgb(138, 36, 36);
     box-shadow: 0 0 10px #719ECE;
 }
 
-
-.accountCheck {
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.accountCheck span {
-    margin-right: 0.5rem;
-}
-
-.accountCheck a {
-    color: #008CBA;
-    text-decoration: none;
-}
-
-.accountCheck a:hover {
+a{
+    color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
     text-decoration: underline;
+    color: black;
+    text-decoration: auto;
 }
+
+.formResetPass span{
+    text-align: left;
+    font-size: small;
+}
+
+.alert{
+    width: 30%;
+    padding: 0.5rem !important;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+}
+
+.centerLoader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 @media screen and (max-width: 768px) {
 
     .centralForm{
+        width: 100%;
+        height: 100%;
         justify-content: center;
         align-items: center;
-        display: flex;
+        display: block;
     }
     
     h4{
         display: none;
     }
 
-    .formRegister {
+    .formResetPass {
         padding: 15px; 
         width: 80vw;
-        margin-top: 95px;
+    }
+
+    .formResetPass input[type="submit"]{
+        width: 100%;
     }
 
     .accountCheck span {
@@ -129,21 +129,5 @@
 
     .accountCheck a {
         font-size: 12px;
-    }
-
-    .formRegister input[type="text"] {
-        width: 100%;
-    }
-    
-    .formRegister input[type="number"] {
-        width: 100%;
-    }
-    
-    .formRegister input[type="password"] {
-        width: 100%;
-    }
-    
-    .formRegister input[type="submit"] {
-        width: 100%;
     }
 }

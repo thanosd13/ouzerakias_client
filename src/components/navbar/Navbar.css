@@ -79,6 +79,12 @@ nav {
 
 }
 
+.user_icon{
+	cursor: pointer;
+	height: 1.25rem;
+	margin-left: 20px;
+}
+
 
 @media only screen and (max-width: 1024px) {
 	header .nav-btn {
@@ -117,6 +123,10 @@ nav {
 
     a {
 		font-size: 1.5rem;
+	}
+
+	.user_icon{
+		display: none;
 	}
 
 }

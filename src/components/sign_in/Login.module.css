@@ -71,10 +71,22 @@
     box-shadow: 0 0 10px #719ECE;
 }
 
+a{
+    color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+    text-decoration: underline;
+    color: black;
+    text-decoration: auto;
+}
+
 .formLogin span{
     text-align: center;
     font-size: small;
     cursor: pointer;
+}
+
+span a{
+    color: black !important;
+    text-decoration: none;
 }
 
 .formLogin span:hover{
@@ -103,6 +115,14 @@
     text-decoration: underline;
 }
 
+.alert{
+    width: 30%;
+    padding: 0.5rem !important;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -111,7 +131,11 @@
         height: 100%;
         justify-content: center;
         align-items: center;
-        display: block;
+        display: flex;
+    }
+
+    span a {
+        font-size: 12px;
     }
     
     h4{

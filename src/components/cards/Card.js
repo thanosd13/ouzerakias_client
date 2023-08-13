@@ -10,37 +10,25 @@ const Cards = () => {
     <div className={styles.card_container}>
       <div className={styles.container}>
         <div className={styles.card}>
-          <img
-            src={ouzeri1}
-            alt=""
-          />
+          <img src={ouzeri1} alt="" />
           <div className={styles.content}>
             <h3>Ουζερί 1</h3>
           </div>
         </div>
         <div className={styles.card}>
-          <img
-            src={ouzeri2}
-            alt=""
-          />
+          <img src={ouzeri2} alt="" />
           <div className={styles.content}>
             <h3>Ουζερί 2</h3>
           </div>
         </div>
         <div className={styles.card}>
-          <img
-            src={ouzeri3}
-            alt=""
-          />
+          <img src={ouzeri3} alt="" />
           <div className={styles.content}>
             <h3>Ουζερί 3</h3>
           </div>
         </div>
         <div className={styles.card}>
-          <img
-           src={ouzeri4}
-            alt=""
-          />
+          <img src={ouzeri4} alt="" />
           <div className={styles.content}>
             <h3>Ουζερί 4</h3>
           </div>

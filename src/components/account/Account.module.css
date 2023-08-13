@@ -1,0 +1,164 @@
+.accountPage{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    vertical-align: middle;
+    height: 72vh;
+}
+
+.accountPage h2{
+    font-size: 1.5em; 
+    text-align: center !important;
+    font-weight: 600;
+}
+
+.accountPage h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.paraContact{
+    padding-top: 0.5rem;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.accountForm{
+    display: flex;
+    width: 35vw;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid rgb(147, 138, 138);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+    border-radius: 10px;
+}
+
+.accountInputs{
+    display: flex;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.accountInputs input{
+    font-size: 13px;
+    color: #4d4d4d;
+    width: 15vw;
+    border: none;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.labelContact{
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    width: 15vw; 
+    margin-top: 10px;
+    padding-top: 0px !important;
+    font-size: 12px;
+}
+
+.textArea{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    width: 100%;
+    padding: 0.5rem;
+}   
+
+.accountInputs input:focus {
+    outline: none;
+    border-color: rgb(138, 36, 36);
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.accountInputs input::placeholder {
+    font-size: 13px;
+  }
+
+.textArea:focus{
+    outline: none;
+    border-color: rgb(138, 36, 36);
+    box-shadow: 0 0 10px #719ECE;
+}   
+
+.sendButton{
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: none; 
+    background-color: #008CBA; 
+    color: white; 
+    font-size: 13px;
+}
+
+.sendButton:hover{
+    cursor: pointer;
+    background-color: #005c89;
+}
+
+.iconSend{
+    padding-left: 1rem;
+}
+
+.dropdownContact{
+    width: 15vw;
+    border: none;
+}
+
+.iconSave{
+    padding-left: 1rem;
+}
+
+.alert{
+    width: 35vw;
+    padding: 0.5rem !important;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+}
+
+.centerLoader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .alert{
+        width: 80vw;
+    }
+
+    .accountPage{
+        height: 88vh;
+    }
+
+    .accountForm{
+        width: 80vw;
+    }
+
+    .accountInputs{
+        flex-direction: column;
+    }
+
+    .accountInputs input{
+        width: 100%
+    }
+
+    .labelContact{
+        display: none;
+    }
+    
+}

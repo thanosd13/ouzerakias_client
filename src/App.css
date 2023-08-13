@@ -13,6 +13,13 @@
   }
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,6 +30,15 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+input[type="text"]:disabled{
+  cursor: not-allowed;
+}
+
+input[type="date"]:disabled{
+  cursor: not-allowed;
+}
+
 
 .App-link {
   color: #61dafb;

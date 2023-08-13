@@ -22,13 +22,12 @@ function Maps() {
         },
         (error) => {
           // Handle error
-          console.log(error);
+
           alert('Could not fetch your location.');
         }
       );
     } else {
       // Browser doesn't support Geolocation
-      console.log("Browser does not support geolocation.");
       alert('Browser does not support geolocation.');
     }
     
@@ -51,7 +50,6 @@ function Maps() {
             <Marker position={location} />
           </GoogleMap>
         </LoadScript>
-        <Footer />
       </div>
     </div>
   );
