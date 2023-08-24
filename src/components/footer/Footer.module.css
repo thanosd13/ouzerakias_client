@@ -3,7 +3,7 @@
     padding: 10px 0; 
     margin-top: 2rem;
     width: 100%;
-    position: absolute !important;
+    position:fixed !important;
     bottom: 0 !important;
     left: 0;
 }

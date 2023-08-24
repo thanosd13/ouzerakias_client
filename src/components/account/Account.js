@@ -3,7 +3,7 @@ import styles from "../account/Account.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFloppyDisk } from "@fortawesome/free-solid-svg-icons";
 import RingLoader from "react-spinners/RingLoader";
-import Alert from "react-bootstrap/Alert";
+import Alert from "react-bootstrap/Alert";      
 import {
   axiosInstanceWithHeader,
   axiosInstanceWithoutHeader,

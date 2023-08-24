@@ -70,6 +70,7 @@ nav {
 	border-radius: 3px;
 	padding: 3px;
 	font-weight: 300;
+	margin-right: 42px;
 }
 
 .sign_in_btn:hover{
@@ -83,8 +84,28 @@ nav {
 	cursor: pointer;
 	height: 1.25rem;
 	margin-left: 20px;
+	margin-right: 45px;
 }
 
+.country_flag{
+	margin-left: 10px;
+	border-radius: 50px;
+}
+
+.icons_flag{
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+	right: 0;
+	margin-left: 20px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.open_flag{
+	margin-top: 5px;
+	margin-right: 8px;
+}
 
 @media only screen and (max-width: 1024px) {
 	header .nav-btn {
@@ -126,6 +147,10 @@ nav {
 	}
 
 	.user_icon{
+		display: none;
+	}
+	
+	.icons_flag{
 		display: none;
 	}
 

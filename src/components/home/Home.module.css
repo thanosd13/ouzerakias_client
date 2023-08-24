@@ -1,7 +1,18 @@
 .welcomeDiv{
 	padding: 2rem;
-	align-items: center;
-	text-align: center;
+	background-image: url('/src/images/cafe-3537801_1280 (1).jpg'); 
 	background-color: #f8f8f8;
 	font-family: initial !important;
+	height: 30vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.welcome_text{
+	color: rgb(255 255 255);
+	font-size: 19px;
+	font-weight: 800;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

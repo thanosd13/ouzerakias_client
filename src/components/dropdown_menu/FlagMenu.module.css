@@ -1,0 +1,27 @@
+.dropdown{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 125px;
+    background-color: #536976;
+    border: 1px solid #536976;
+    border-radius: 2.5px;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
+.menuItem{
+    height: 50px;
+    display: flex;
+    color: rgb(45, 42, 42);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    transition: background 500ms;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.menuItem:hover{
+    background-color: #525357;
+}

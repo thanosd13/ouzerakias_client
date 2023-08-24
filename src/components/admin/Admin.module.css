@@ -1,0 +1,68 @@
+.divForm{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+
+.uploadForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 37%;
+    border: 1px solid rgb(147, 138, 138);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+    border-radius: 10px;
+}
+
+.uploadInputs{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.uploadInputs input{
+    width: 15vw;
+    border: none;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.uploadInputs input[type=file]{
+    box-shadow: none;
+}
+
+.textArea{
+    width: 32vw;
+    border: none;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.uploadButton{
+    width: 32vw;
+    padding: 0.5rem;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: none; 
+    background-color: #008CBA; 
+    color: white; 
+    font-size: 16px;
+}
+
+.uploadButton:hover{
+    cursor: pointer;
+    background-color: #005c89;
+}
+
+.icon{
+    margin-left: 10px;
+}

@@ -8,10 +8,13 @@ import { UserContext } from "../../context/UserContext";
 
 function Sidebar({ isOpen, setIsOpen }) {
   const navigate = useNavigate();
+  const user = localStorage.getItem("user");
+  const formatUser = JSON.parse(user);
+  const [storedUser, setStoredUser] = useState(formatUser);
   const { setIsLogged, isLogged } = useContext(UserContext);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [filteredData, setFilteredData] = useState([]);
-
+  
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -24,16 +27,29 @@ function Sidebar({ isOpen, setIsOpen }) {
   }, []);
 
   useEffect(() => {
+
     let data = [];
 
+    if(formatUser !== null){
+      setStoredUser(formatUser);
+    }    
+    
     if (isLogged) {
-       data = sideBarMobileData.filter(item => item.link !== "/log_in");
+      if(storedUser.admin === 1){
+          data = sideBarMobileData.filter(item => item.link !== "/log_in");
+      } 
+      else {
+        data = sideBarMobileData.filter(item => item.link !== "/log_in" && item.link !== "/admin_platform");
+      }
+       
     } else {
        data = sideBarMobileData.filter(item => item.link !== "/log_out" && item.link !== "/account" && item.link !== "/love_list");
     }
  
     setFilteredData(data);
-  }, [isLogged]);
+  }, [user]);
+
+
 
   const redirect = (key) => {
     if (key === "/log_out") {
@@ -50,7 +66,11 @@ function Sidebar({ isOpen, setIsOpen }) {
     } else if (key === "/contact") {
       navigate("/contact");
       setIsOpen(false);
+    } else if (key === "/admin_platform") {
+      navigate("/admin_platform");
+      setIsOpen(false);
     }
+    
   };
 
   const redirectForMobile = (key) => {
@@ -90,6 +110,9 @@ function Sidebar({ isOpen, setIsOpen }) {
           {!isMobile ? (
             <ul className={styles.sideBarList}>
               {SidebarData.map((val, key) => {
+                  if (val.link === '/admin_platform' && storedUser.admin !== 1) {
+                    return null;
+                  }
                 return (
                   <li
                     className={styles.row}

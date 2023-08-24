@@ -1,6 +1,5 @@
 import "./App.css";
 import Maps from "./components/maps/Maps";
-import Cards from "./components/cards/Card";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Home from "./components/home/Home";
@@ -14,12 +13,18 @@ import CreateNewPass from "./components/reset_pass/CreateNewPass";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { UserContext } from "./context/UserContext";
 import { useState, useEffect } from "react";
+import FlagMenu from "./components/dropdown_menu/FlagMenu";
+import Admin from "./components/admin/Admin";
+import TestComponent from "./components/test/TestComponent";
+import TestUseHooks from "./components/test/TestUseHooks";
+import BasicHooks from "./components/hooks/BasicHooks";
 
 
 function App() {
   
   const[isLogged, setIsLogged] = useState(localStorage.getItem('logged') === 'true');
   const[isOpen, setIsOpen] = useState(false);
+  const[isOpenFlag, setIsOpenFlag] = useState(false);
 
 
   useEffect(() => {
@@ -30,11 +35,13 @@ function App() {
     <>
     <UserContext.Provider value={{isLogged, setIsLogged}}>
       <Router>
-        <Navbar setIsOpen={setIsOpen} />
+        <Navbar setIsOpen={setIsOpen} setIsOpenFlag={setIsOpenFlag} isOpenFlag={isOpenFlag} />
         <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
+        <FlagMenu isOpenFlag={isOpenFlag} />
         <Routes>
           <Route path='/' element={<Home />} />   
-          <Route path='/about' element={<Maps />} />
+          <Route path='/hooks' element={<BasicHooks />} />   
+          <Route path='/maps' element={<Maps />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/login' element={<Login />} />
           <Route path='/token/:token' element={<Login />} />
@@ -43,6 +50,10 @@ function App() {
           <Route path='/account' element={<Account />} />
           <Route path='/create_new_pass/:token' element={<CreateNewPass />} />                 
           <Route path='/sidebar' element={<Sidebar />} />
+          <Route path='/flag_menu' element={<FlagMenu />} />
+          <Route path='/admin_platform' element={<Admin />} />
+          <Route path='/test' element={<TestComponent />} />
+          <Route path='/hooks' element={<TestUseHooks />} />
         </Routes>
         <Footer />
       </Router>

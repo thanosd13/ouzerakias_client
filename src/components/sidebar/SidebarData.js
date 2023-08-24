@@ -6,7 +6,9 @@ import {
   faGear,
   faRightFromBracket,
   faUser,
-  faRightToBracket
+  faRightToBracket,
+  faStar,
+  faLock
 } from "@fortawesome/free-solid-svg-icons";
 
 export const SidebarData = [
@@ -29,6 +31,12 @@ export const SidebarData = [
   },
 
   {
+    title: "Κριτικές",
+    icon: <FontAwesomeIcon icon={faStar} />,
+    link: "/reviews",
+  },
+
+  {
     title: "Λογαριασμός",
     icon: <FontAwesomeIcon icon={faUser} />,
     link: "/account",
@@ -38,6 +46,12 @@ export const SidebarData = [
     title: "Ρυθμίσεις",
     icon: <FontAwesomeIcon icon={faGear} />,
     link: "/settings",
+  },
+
+  {
+    title: "Διαχειριστής",
+    icon: <FontAwesomeIcon icon={faLock} />,
+    link: "/admin_platform",
   },
 
   {
@@ -64,6 +78,12 @@ export const sideBarMobileData = [
     title: "Αγαπημένα",
     icon: <FontAwesomeIcon icon={faHeart} />,
     link: "/love_list",
+  },
+
+  {
+    title: "Κριτικές",
+    icon: <FontAwesomeIcon icon={faStar} />,
+    link: "/reviews",
   },
 
   {
